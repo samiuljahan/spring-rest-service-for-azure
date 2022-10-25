@@ -20,7 +20,7 @@ public class SpringRestAzureApplication {
     @GetMapping("/employee")
 
     public Employee sayHello() {
-        Employee employee = new Employee("Samiul", "Jahan", "sj@gmail.com");
+        Employee employee = new Employee("Samiul", "Jahan", "samiulj@gmail.com");
         return employee;
     }
 
