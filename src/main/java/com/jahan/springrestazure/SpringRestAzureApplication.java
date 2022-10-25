@@ -1,5 +1,6 @@
 package com.jahan.springrestazure;
 
+import com.jahan.springrestazure.domain.Employee;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,10 +17,11 @@ public class SpringRestAzureApplication {
 
 
 
-    @GetMapping("/hello")
+    @GetMapping("/employee")
 
-    public String sayHello() {
-        return "Hello from Azure";
+    public Employee sayHello() {
+        Employee employee = new Employee("Samiul", "Jahan", "sj@gmail.com");
+        return employee;
     }
 
 }
